@@ -1,0 +1,30 @@
+# Credentials — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Platform metadata / dependencies
+.vercel/
+node_modules/
+.next/
+dist/
+build/
+
+# Test outputs, caches and OS files
+__pycache__/
+.pytest_cache/
+*.pyc
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+Thumbs.db
+*.log
+
+# Prototype screenshots are ephemeral, not part of the deploy
+screenshots/
+tests/screenshot_*.png
